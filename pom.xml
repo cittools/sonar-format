@@ -50,8 +50,8 @@
     </build>
 
     <scm>
-        <connection>scm:git:git://github.com:cittools/sonar-format.git</connection>
-        <developerConnection>scm:git:git://github.com:cittools/sonar-format.git</developerConnection>
+        <connection>scm:git:git://github.com/cittools/sonar-format.git</connection>
+        <developerConnection>scm:git:git://github.com/cittools/sonar-format.git</developerConnection>
     </scm>
 
 </project>
