@@ -5,7 +5,7 @@
     <groupId>com.thalesgroup.sonar.lib</groupId>
     <artifactId>sonar-format</artifactId>
     <packaging>pom</packaging>
-    <version>0.3</version>
+    <version>0.3-SNAPSHOT</version>
     <name>Sonar Format</name>
 
     <properties>
