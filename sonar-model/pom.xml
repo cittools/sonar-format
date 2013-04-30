@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.thalesgroup.sonar.lib</groupId>
         <artifactId>sonar-format</artifactId>
-        <version>0.4</version>
+        <version>0.5</version>
     </parent>
 
     <artifactId>sonar-model</artifactId>
@@ -84,6 +84,20 @@
                             <packageName>com.thalesgroup.sonar.lib.model.v4</packageName>
                             <schemaFiles>sonar-4.xsd</schemaFiles>
                             <staleFile>${project.build.directory}/generated-sources/jaxb/sonarv4/.staleFlag.</staleFile>
+                            <clearOutputDir>false</clearOutputDir>
+                        </configuration>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                    </execution>
+                     <execution>
+                        <id>sonarv5</id>
+                        <configuration>
+                            <schemaDirectory>${basedir}/src/main/resources/com/thalesgroup/sonar/lib/model/xsd
+                            </schemaDirectory>
+                            <packageName>com.thalesgroup.sonar.lib.model.v5</packageName>
+                            <schemaFiles>sonar-5.xsd</schemaFiles>
+                            <staleFile>${project.build.directory}/generated-sources/jaxb/sonarv5/.staleFlag.</staleFile>
                             <clearOutputDir>false</clearOutputDir>
                         </configuration>
                         <goals>
